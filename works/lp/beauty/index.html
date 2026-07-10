@@ -6,15 +6,38 @@
 <title>AQUALUME うるおいCICAセラム | 公式サイト（架空・ポートフォリオ用サンプル）</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- ツボクサ（CICA）のスプリグ：見出し装飾用 -->
+    <symbol id="sprig" viewBox="0 0 120 24">
+      <g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+        <path d="M10 12 H44"/>
+        <path d="M76 12 H110"/>
+      </g>
+      <g fill="currentColor">
+        <ellipse cx="53" cy="9" rx="4.2" ry="3.2" transform="rotate(-28 53 9)" opacity="0.55"/>
+        <ellipse cx="67" cy="9" rx="4.2" ry="3.2" transform="rotate(28 67 9)" opacity="0.55"/>
+        <circle cx="60" cy="13.5" r="2.1"/>
+      </g>
+    </symbol>
+    <!-- 悩みアイコン共通のグラデーション -->
+    <linearGradient id="icon-blush" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9ebe3"/>
+      <stop offset="100%" stop-color="#e9cabc"/>
+    </linearGradient>
+  </defs>
+</svg>
 
 <div class="lp-badge">※ポートフォリオ用の架空サンプルLPです</div>
 
 <header class="brand-header">
   <div class="brand-logo">AQUALUME</div>
+  <p class="brand-tagline">HYDRATING CICA SERUM</p>
 </header>
 
 <section class="hero">
@@ -22,10 +45,110 @@
     <p class="hero-kicker">乾燥・毛穴・くすみ、もう諦めていませんか？</p>
     <h1>肌がうるおうと、<br>毎朝の鏡が変わる。</h1>
     <p class="hero-sub">CICA成分配合の高保湿美容液で、<br class="sp-only">3週間後の"素肌"に自信を。</p>
+
     <div class="hero-visual" aria-hidden="true">
-      <div class="glow-orb"></div>
-      <div class="bottle"></div>
+      <svg class="hero-art" viewBox="0 0 420 330" role="img">
+        <defs>
+          <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+            <stop offset="0%" stop-color="#e9cfc3" stop-opacity="0.55"/>
+            <stop offset="60%" stop-color="#efdcd2" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#faf7f4" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"  stop-color="#ffffff" stop-opacity="0.95"/>
+            <stop offset="45%" stop-color="#f6ece5" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#e7d2c6" stop-opacity="0.9"/>
+          </linearGradient>
+          <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f4e0d5"/>
+            <stop offset="100%" stop-color="#d9b3a2"/>
+          </linearGradient>
+          <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#d3ba90"/>
+            <stop offset="35%" stop-color="#a8895c"/>
+            <stop offset="70%" stop-color="#cfb489"/>
+            <stop offset="100%" stop-color="#b2966a"/>
+          </linearGradient>
+        </defs>
+
+        <!-- 背景の光 -->
+        <ellipse cx="210" cy="160" rx="170" ry="130" fill="url(#glow)"/>
+
+        <!-- 水面の波紋 -->
+        <g fill="none" stroke="#c9ab9d" stroke-width="1">
+          <ellipse cx="210" cy="284" rx="64"  ry="10" opacity="0.55"/>
+          <ellipse cx="210" cy="286" rx="104" ry="16" opacity="0.32"/>
+          <ellipse cx="210" cy="288" rx="148" ry="22" opacity="0.16"/>
+        </g>
+
+        <!-- 左のツボクサのスプリグ -->
+        <g class="sway" style="transform-origin:150px 268px">
+          <path d="M150 268 C136 232 120 196 108 150" fill="none" stroke="#8fa287" stroke-width="1.4" stroke-linecap="round"/>
+          <g fill="#9db095">
+            <ellipse cx="128" cy="222" rx="9"  ry="7"   transform="rotate(-38 128 222)" opacity="0.75"/>
+            <ellipse cx="140" cy="196" rx="8"  ry="6.4" transform="rotate(24 140 196)"  opacity="0.6"/>
+            <ellipse cx="114" cy="182" rx="8.6" ry="6.8" transform="rotate(-30 114 182)" opacity="0.85"/>
+            <ellipse cx="124" cy="158" rx="7.4" ry="6"   transform="rotate(30 124 158)"  opacity="0.6"/>
+            <ellipse cx="106" cy="142" rx="7"  ry="5.6" transform="rotate(-24 106 142)" opacity="0.9"/>
+          </g>
+        </g>
+
+        <!-- 右のツボクサのスプリグ（小） -->
+        <g class="sway sway-late" style="transform-origin:286px 280px">
+          <path d="M286 280 C296 252 306 228 310 202" fill="none" stroke="#8fa287" stroke-width="1.2" stroke-linecap="round"/>
+          <g fill="#9db095">
+            <ellipse cx="298" cy="246" rx="7.4" ry="5.8" transform="rotate(38 298 246)"  opacity="0.7"/>
+            <ellipse cx="314" cy="228" rx="6.8" ry="5.4" transform="rotate(-20 314 228)" opacity="0.55"/>
+            <ellipse cx="304" cy="210" rx="6.2" ry="5"   transform="rotate(30 304 210)"  opacity="0.8"/>
+          </g>
+        </g>
+
+        <!-- セラムボトル -->
+        <g class="bottle-float">
+          <!-- スポイトのゴム部 -->
+          <ellipse cx="210" cy="66" rx="13" ry="12" fill="#4a4038"/>
+          <ellipse cx="206" cy="62" rx="4" ry="3.4" fill="#6b5f54" opacity="0.8"/>
+          <!-- 金のカラー -->
+          <rect x="193" y="74" width="34" height="28" rx="3" fill="url(#gold)"/>
+          <rect x="193" y="82" width="34" height="1.6" fill="#8d7248" opacity="0.5"/>
+          <rect x="193" y="92" width="34" height="1.6" fill="#8d7248" opacity="0.5"/>
+          <!-- ネック -->
+          <rect x="199" y="102" width="22" height="16" fill="#efdfd5" stroke="#d9bfa8" stroke-width="0.8"/>
+          <!-- ガラスボディ -->
+          <path d="M182 136
+                   q0 -18 16 -18 h24 q16 0 16 18
+                   v104 q0 24 -24 24 h-8 q-24 0 -24 -24 z"
+                fill="url(#glass)" stroke="#c8a986" stroke-width="1"/>
+          <!-- 中のセラム -->
+          <path d="M190 178 h40 v60 q0 18 -18 18 h-4 q-18 0 -18 -18 z"
+                fill="url(#liquid)" opacity="0.9"/>
+          <path d="M190 178 h40" stroke="#fff" stroke-width="1.4" opacity="0.6"/>
+          <!-- 中のスポイト管 -->
+          <rect x="207.4" y="118" width="5.2" height="118" rx="2.6" fill="#fff" opacity="0.5"/>
+          <path d="M210 236 q-3 8 0 12 q3 -4 0 -12" fill="#c99a86" opacity="0.9"/>
+          <!-- ガラスのハイライト -->
+          <path d="M190 142 v96" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+          <path d="M232 150 v80" stroke="#b78e78" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+          <!-- ラベル -->
+          <text x="210" y="212" text-anchor="middle" font-family="'Cormorant Garamond','Shippori Mincho',serif" font-size="9.5" letter-spacing="2.6" fill="#8d7248">AQUALUME</text>
+          <text x="210" y="224" text-anchor="middle" font-family="'Cormorant Garamond','Shippori Mincho',serif" font-size="5.6" letter-spacing="1.8" fill="#a98d5f">CICA SERUM</text>
+        </g>
+
+        <!-- 雫と輝き -->
+        <path class="drip" d="M285 148 q-5 8 0 13 q5 -5 0 -13" fill="#d9b3a2"/>
+        <g fill="#c8a79c">
+          <circle cx="130" cy="96"  r="2"   opacity="0.5"/>
+          <circle cx="300" cy="88"  r="1.6" opacity="0.45"/>
+          <circle cx="322" cy="168" r="2"   opacity="0.35"/>
+          <circle cx="94"  cy="236" r="1.6" opacity="0.4"/>
+        </g>
+        <g stroke="#c8a79c" stroke-width="1" stroke-linecap="round" opacity="0.55">
+          <path d="M292 116 v10 M287 121 h10"/>
+          <path d="M118 72 v8 M114 76 h8"/>
+        </g>
+      </svg>
     </div>
+
     <a href="#price" class="cta-btn">今なら初回50%OFFで試す</a>
     <p class="hero-note">全国送料無料 ／ 30日間返金保証</p>
   </div>
@@ -33,32 +156,73 @@
 
 <section class="pain">
   <div class="section-inner">
+    <p class="eyebrow">CONCERNS</p>
     <h2>こんなお悩み、ありませんか？</h2>
+    <div class="h2-deco" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
     <div class="pain-grid">
-      <div class="pain-card">
+      <div class="pain-card pain-card--rose reveal">
+        <p class="pain-kicker">朝には突っ張る</p>
+        <p class="pain-headline">乾燥肌</p>
         <div class="pain-icon-wrap">
-          <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 3.5c4.2 5.1 6.2 8.7 6.2 11.2a6.2 6.2 0 1 1-12.4 0c0-2.5 2-6.1 6.2-11.2z"/>
+          <!-- うるおいが逃げていく雫 -->
+          <svg class="pain-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M32 10 C41 22 46.5 30.5 46.5 38 a14.5 14.5 0 1 1 -29 0 C17.5 30.5 23 22 32 10 z"
+                  fill="url(#icon-blush)" stroke="#a97e70" stroke-width="1.6" stroke-linejoin="round"/>
+            <g fill="none" stroke="#a97e70" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M33 27 l-4.5 8.5 l5 6 l-3 6.5"/>
+              <path d="M28.5 35.5 l-6.5 2.5"/>
+              <path d="M33.5 41.5 l6.5 1.5"/>
+            </g>
+            <g fill="#b8996c">
+              <circle cx="45" cy="15" r="1.7" opacity="0.85"/>
+              <circle cx="50.5" cy="21" r="1.3" opacity="0.6"/>
+              <circle cx="46" cy="26" r="1" opacity="0.45"/>
+            </g>
           </svg>
         </div>
-        <p>朝には突っ張る<br>乾燥肌</p>
       </div>
-      <div class="pain-card">
+      <div class="pain-card pain-card--sage reveal">
+        <p class="pain-kicker">メイクで隠せない</p>
+        <p class="pain-headline">毛穴の目立ち</p>
         <div class="pain-icon-wrap">
-          <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="10.5" cy="10.5" r="6"/>
-            <line x1="15" y1="15" x2="20" y2="20"/>
+          <!-- 手鏡に映る毛穴 -->
+          <svg class="pain-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M29.2 38.5 q-1.8 9 -1.2 13 q0.6 3.8 4 3.8 q3.4 0 4 -3.8 q0.6 -4 -1.2 -13 z"
+                  fill="url(#icon-blush)" stroke="#a97e70" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="32" cy="23.5" r="14.5" fill="#fdf6f1" stroke="#a97e70" stroke-width="1.6"/>
+            <circle cx="32" cy="23.5" r="10.2" fill="#f3ded4" opacity="0.55"/>
+            <path d="M21.5 16.5 a12.8 12.8 0 0 1 8.2 -5.6" fill="none" stroke="#b8996c" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+            <g fill="#a97e70">
+              <circle cx="28" cy="20" r="1.1"/>
+              <circle cx="34.5" cy="18" r="0.85"/>
+              <circle cx="37" cy="24" r="1.1"/>
+              <circle cx="30.5" cy="27" r="0.85"/>
+              <circle cx="26" cy="24.5" r="0.75"/>
+            </g>
+            <rect x="27.2" y="37" width="9.6" height="3.2" rx="1.6" fill="#b8996c"/>
           </svg>
         </div>
-        <p>メイクで隠せない<br>毛穴の目立ち</p>
       </div>
-      <div class="pain-card">
+      <div class="pain-card pain-card--lavender reveal">
+        <p class="pain-kicker">写真で気になる</p>
+        <p class="pain-headline">肌のくすみ</p>
         <div class="pain-icon-wrap">
-          <svg class="pain-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 3.5l1.7 4.9 4.9 1.7-4.9 1.7L12 16.7l-1.7-4.9-4.9-1.7 4.9-1.7L12 3.5z"/>
+          <!-- 靄がかかって光を失う肌 -->
+          <svg class="pain-icon" viewBox="0 0 64 64" aria-hidden="true">
+            <g stroke="#b8996c" stroke-width="1.3" stroke-linecap="round" opacity="0.9" fill="none">
+              <path d="M48 11.5 v8 M44 15.5 h8"/>
+            </g>
+            <g stroke="#b8996c" stroke-width="1" stroke-linecap="round" opacity="0.4" fill="none">
+              <path d="M54 24.5 v5 M51.5 27 h5"/>
+            </g>
+            <circle cx="30" cy="36" r="16" fill="url(#icon-blush)" stroke="#a97e70" stroke-width="1.6"/>
+            <g fill="none" stroke="#a97e70" stroke-width="1.2" stroke-linecap="round">
+              <path d="M18.5 31.5 q4 -3 8 0 t8 0 t8 0" opacity="0.75"/>
+              <path d="M17 39 q4 -3 8 0 t8 0 t8 0" opacity="0.55"/>
+              <path d="M21 46 q4 -3 8 0 t8 0" opacity="0.35"/>
+            </g>
           </svg>
         </div>
-        <p>写真で気になる<br>肌のくすみ</p>
       </div>
     </div>
   </div>
@@ -66,22 +230,24 @@
 
 <section class="features">
   <div class="section-inner">
+    <p class="eyebrow">OUR PROMISE</p>
     <h2>AQUALUMEが選ばれる理由</h2>
-    <div class="feature-row">
+    <div class="h2-deco" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
+    <div class="feature-row reveal">
       <div class="feature-num">01</div>
       <div class="feature-body">
         <h3>高濃度CICA成分</h3>
         <p>肌荒れ・乾燥に着目した独自配合で、うるおいのある肌印象へ導きます。</p>
       </div>
     </div>
-    <div class="feature-row">
+    <div class="feature-row reveal">
       <div class="feature-num">02</div>
       <div class="feature-body">
         <h3>べたつかないテクスチャ</h3>
         <p>朝晩どちらも使いやすい軽い付け心地。メイク前でも使用可能です。</p>
       </div>
     </div>
-    <div class="feature-row">
+    <div class="feature-row reveal">
       <div class="feature-num">03</div>
       <div class="feature-body">
         <h3>低刺激設計</h3>
@@ -93,21 +259,26 @@
 
 <section class="voice">
   <div class="section-inner">
+    <p class="eyebrow">VOICES</p>
     <h2>使った方の声</h2>
+    <div class="h2-deco" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
     <div class="voice-grid">
-      <div class="voice-card">
-        <p class="voice-stars">★★★★★</p>
-        <p class="voice-text">「使い始めて2週間で、朝の肌の突っ張りが気にならなくなりました。」</p>
+      <div class="voice-card reveal">
+        <p class="voice-quote" aria-hidden="true">&ldquo;</p>
+        <p class="voice-stars" aria-label="星5つ">★★★★★</p>
+        <p class="voice-text">使い始めて2週間で、朝の肌の突っ張りが気にならなくなりました。</p>
         <p class="voice-name">30代・乾燥肌</p>
       </div>
-      <div class="voice-card">
-        <p class="voice-stars">★★★★★</p>
-        <p class="voice-text">「テクスチャが軽くて、メイク前にも使いやすいのが続けられる理由です。」</p>
+      <div class="voice-card reveal">
+        <p class="voice-quote" aria-hidden="true">&ldquo;</p>
+        <p class="voice-stars" aria-label="星5つ">★★★★★</p>
+        <p class="voice-text">テクスチャが軽くて、メイク前にも使いやすいのが続けられる理由です。</p>
         <p class="voice-name">20代・混合肌</p>
       </div>
-      <div class="voice-card">
-        <p class="voice-stars">★★★★☆</p>
-        <p class="voice-text">「毛穴の目立ちが落ち着いてきた気がします。香りがないのも◎」</p>
+      <div class="voice-card reveal">
+        <p class="voice-quote" aria-hidden="true">&ldquo;</p>
+        <p class="voice-stars" aria-label="星4つ">★★★★<span class="star-off">★</span></p>
+        <p class="voice-text">毛穴の目立ちが落ち着いてきた気がします。香りがないのも◎</p>
         <p class="voice-name">30代・敏感肌</p>
       </div>
     </div>
@@ -116,35 +287,46 @@
 
 <section id="price" class="price">
   <div class="section-inner">
+    <p class="eyebrow">SPECIAL OFFER</p>
     <h2>まずは初回限定価格で</h2>
-    <div class="price-card">
+    <div class="h2-deco" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
+    <div class="price-card reveal">
       <p class="price-badge">初回限定 50%OFF</p>
-      <p class="price-main"><span class="price-old">6,800円</span> → <span class="price-new">3,400円</span>（税込）</p>
+      <p class="price-main"><span class="price-old">6,800円</span><span class="price-arrow">→</span><span class="price-new">3,400<span class="price-yen">円</span></span><span class="price-tax">（税込）</span></p>
       <p class="price-note">送料無料・30日間返金保証付き</p>
-      <a href="#" class="cta-btn cta-btn-large">今すぐ試してみる</a>
+      <a href="#" class="cta-btn cta-btn-large cta-btn-fill">今すぐ試してみる</a>
     </div>
   </div>
 </section>
 
 <section class="faq">
   <div class="section-inner">
+    <p class="eyebrow">Q &amp; A</p>
     <h2>よくある質問</h2>
+    <div class="h2-deco" aria-hidden="true"><svg><use href="#sprig"/></svg></div>
     <div class="faq-item">
-      <p class="faq-q">Q. 敏感肌でも使えますか？</p>
-      <p class="faq-a">A. 低刺激設計ですが、パッチテストの上でのご使用をおすすめしています。</p>
+      <p class="faq-q">敏感肌でも使えますか？</p>
+      <p class="faq-a">低刺激設計ですが、パッチテストの上でのご使用をおすすめしています。</p>
     </div>
     <div class="faq-item">
-      <p class="faq-q">Q. 定期便に縛りはありますか？</p>
-      <p class="faq-a">A. 回数縛りはございません。いつでも休止・解約が可能です。</p>
+      <p class="faq-q">定期便に縛りはありますか？</p>
+      <p class="faq-a">回数縛りはございません。いつでも休止・解約が可能です。</p>
     </div>
     <div class="faq-item">
-      <p class="faq-q">Q. 効果を感じるまでの目安は？</p>
-      <p class="faq-a">A. 個人差がありますが、3週間程度の継続使用をおすすめしています。</p>
+      <p class="faq-q">効果を感じるまでの目安は？</p>
+      <p class="faq-a">個人差がありますが、3週間程度の継続使用をおすすめしています。</p>
     </div>
   </div>
 </section>
 
 <section class="final-cta">
+  <svg class="final-ripple" viewBox="0 0 420 80" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+    <g fill="none" stroke="#c9ab9d" stroke-width="1">
+      <ellipse cx="210" cy="76" rx="70"  ry="9"  opacity="0.5"/>
+      <ellipse cx="210" cy="78" rx="120" ry="14" opacity="0.3"/>
+      <ellipse cx="210" cy="80" rx="180" ry="19" opacity="0.15"/>
+    </g>
+  </svg>
   <div class="section-inner">
     <h2>うるおう肌へ、今日から。</h2>
     <a href="#price" class="cta-btn cta-btn-large">初回50%OFFで試してみる</a>
@@ -157,10 +339,10 @@
 
 <script>
 (function () {
-  var cards = document.querySelectorAll('.pain-card');
-  if (!cards.length) return;
+  var targets = document.querySelectorAll('.reveal');
+  if (!targets.length) return;
   if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    cards.forEach(function (c) { c.classList.add('in-view'); });
+    targets.forEach(function (t) { t.classList.add('in-view'); });
     return;
   }
   var io = new IntersectionObserver(function (entries) {
@@ -170,8 +352,8 @@
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.35 });
-  cards.forEach(function (c) { io.observe(c); });
+  }, { threshold: 0.3 });
+  targets.forEach(function (t) { io.observe(t); });
 })();
 </script>
 </body>
