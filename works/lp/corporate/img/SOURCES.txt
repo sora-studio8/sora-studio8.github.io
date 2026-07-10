@@ -1,0 +1,7 @@
+画像出典メモ（Unsplash License: 商用利用可・クレジット表記不要）
+https://unsplash.com/license
+
+hero.jpg            https://unsplash.com/photos/1496247749665-49cf5b1022e9 (interior of large industrial factory)
+works-food.jpg      https://unsplash.com/photos/1762330018258-2cf9b8f80618 (worker filling food trays on a conveyor belt)
+works-auto.jpg      https://unsplash.com/photos/1567789884554-0b844b597180 (vehicle assembly with robot machines)
+works-warehouse.jpg https://unsplash.com/photos/1553413077-190dd305871c (large warehouse aisle)

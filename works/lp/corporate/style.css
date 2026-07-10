@@ -30,6 +30,7 @@ body {
   padding: 0 24px;
 }
 
+a { text-decoration: none; }
 h1, h2, h3 { margin: 0; }
 table { border-collapse: collapse; width: 100%; }
 
@@ -85,7 +86,9 @@ table { border-collapse: collapse; width: 100%; }
 
 /* Hero */
 .c-hero {
-  background: linear-gradient(160deg, var(--navy), var(--navy-soft));
+  background:
+    linear-gradient(160deg, rgba(28, 34, 48, 0.94), rgba(43, 51, 72, 0.78)),
+    url(img/hero.jpg) center / cover no-repeat var(--navy);
   color: #fff;
   padding: 90px 0 120px;
   position: relative;
@@ -208,8 +211,14 @@ section h2 {
 }
 .c-work-card { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .c-work-thumb {
-  height: 120px;
+  height: 140px;
   background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+}
+.c-work-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .c-work-tag { font-size: 11px; color: var(--accent); font-weight: 700; margin: 14px 16px 4px; }
 .c-work-title { font-size: 14px; margin: 0 16px 16px; }
