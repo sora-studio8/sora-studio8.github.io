@@ -33,22 +33,41 @@
   <div class="c-hero-visual" aria-hidden="true"></div>
 </section>
 
+<section class="c-stats" aria-label="実績ハイライト">
+  <div class="c-wrap">
+    <div class="c-stats-grid">
+      <div class="c-stat reveal">
+        <p class="c-stat-num">39<span>年</span></p>
+        <p class="c-stat-label">創業からの歴史</p>
+      </div>
+      <div class="c-stat reveal">
+        <p class="c-stat-num">1,200<span>件+</span></p>
+        <p class="c-stat-label">累計導入実績</p>
+      </div>
+      <div class="c-stat reveal">
+        <p class="c-stat-num">98<span>%</span></p>
+        <p class="c-stat-label">保守契約の継続率</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="service" class="c-service">
   <div class="c-wrap">
     <p class="c-eyebrow">SERVICE</p>
     <h2>事業内容</h2>
     <div class="c-service-grid">
-      <div class="c-service-card">
+      <div class="c-service-card reveal">
         <div class="c-service-num">01</div>
         <h3>設計・開発</h3>
         <p>お客様の生産ラインに合わせたオーダーメイド機材の設計を行います。</p>
       </div>
-      <div class="c-service-card">
+      <div class="c-service-card reveal">
         <div class="c-service-num">02</div>
         <h3>製造・組立</h3>
         <p>自社工場での一貫生産により、品質と納期の両立を実現します。</p>
       </div>
-      <div class="c-service-card">
+      <div class="c-service-card reveal">
         <div class="c-service-num">03</div>
         <h3>保守・メンテナンス</h3>
         <p>導入後も定期点検・修理対応により、稼働率の維持をサポートします。</p>
@@ -75,17 +94,17 @@
     <p class="c-eyebrow">WORKS</p>
     <h2>施工実績</h2>
     <div class="c-works-grid">
-      <div class="c-work-card">
+      <div class="c-work-card reveal">
         <div class="c-work-thumb"><img src="img/works-food.jpg" alt="食品工場の搬送ラインでの充填作業" loading="lazy"></div>
         <p class="c-work-tag">食品工場様</p>
         <p class="c-work-title">搬送ライン一式の設計・導入</p>
       </div>
-      <div class="c-work-card">
+      <div class="c-work-card reveal">
         <div class="c-work-thumb"><img src="img/works-auto.jpg" alt="自動車組立ラインのロボットアーム" loading="lazy"></div>
         <p class="c-work-tag">自動車部品工場様</p>
         <p class="c-work-title">検査工程の自動化機材を導入</p>
       </div>
-      <div class="c-work-card">
+      <div class="c-work-card reveal">
         <div class="c-work-thumb"><img src="img/works-warehouse.jpg" alt="物流倉庫のラック通路" loading="lazy"></div>
         <p class="c-work-tag">物流倉庫様</p>
         <p class="c-work-title">仕分け機材のメンテナンス契約</p>
@@ -120,5 +139,24 @@
   <p>&copy; 2026 MINATO SEISAKUSHO（架空企業・ポートフォリオ用サンプル）</p>
 </footer>
 
+<script>
+(function () {
+  var targets = document.querySelectorAll('.reveal');
+  if (!targets.length) return;
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    targets.forEach(function (t) { t.classList.add('in-view'); });
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.25 });
+  targets.forEach(function (t) { io.observe(t); });
+})();
+</script>
 </body>
 </html>
