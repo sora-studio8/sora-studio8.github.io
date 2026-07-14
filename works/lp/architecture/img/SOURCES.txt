@@ -1,0 +1,9 @@
+画像出典メモ（Unsplash License: 商用利用可・クレジット表記不要）
+https://unsplash.com/license
+
+hero.jpg    https://unsplash.com/photos/1730492428345-1c4af293c4d9 (light through wood slats onto a wooden atrium wall, by Arda Can Yıldız)
+work-a.jpg  https://unsplash.com/photos/1780147343882-86ff1c09b44e (courtyard seen from above, warm brick and greenery, by Seyed Amir Mohammad Tabatabaee)
+work-b.jpg  https://unsplash.com/photos/1605018075968-b014b8d2e487 (wood-clad building facade with window, by Mark Tryapichnikov)
+work-c.jpg  https://unsplash.com/photos/1736059058224-e3543fe6ed60 (single-story wood-slat house with lawn, by Declan Sun)
+
+note: ../../../../img/thumb-architecture.jpg（トップページのWorksカード用サムネイル）も同じ hero.jpg の写真を横長にトリミングしたものです。

@@ -206,6 +206,9 @@ section { padding: 72px 0; }
 .thumb-corporate {
   background: linear-gradient(135deg, #2f3542, #5a6072);
 }
+.thumb-architecture {
+  background: linear-gradient(135deg, #c9c2ae, #55624e);
+}
 
 .work-body { padding: 22px 24px 26px; }
 
